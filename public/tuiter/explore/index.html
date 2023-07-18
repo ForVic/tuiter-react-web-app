@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Tuiter - Explore</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row flex-nowrap">
+            <!-- Left Column -->
+            <div class="col-1 col-lg-2 col-xs-1 mt-3">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="../home.html" class="nav-link">
+                            <i class="fas fa-feather me-2"></i>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="../home.html" class="nav-link">
+                            <i class="fas fa-home me-2"></i>
+                            <span class="d-none d-lg-inline">
+                                Home
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="../explore/index.html" class="nav-link active">
+                            <i class="fas fa-hashtag me-2"></i>
+                            <span class="d-none d-lg-inline">
+                                <b>Explore</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="../notifications.html" class="nav-link">
+                            <i class="far fa-bell me-2"></i>
+                            <span class="d-none d-lg-inline">
+                                Notifications
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="../messages.html" class="nav-link">
+                            <i class="far fa-envelope me-2"></i>
+                            <span class="d-none d-lg-inline">
+                                Messages
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="../bookmarks.html" class="nav-link">
+                            <i class="far fa-bookmark me-2"></i>
+                            <span class="d-none d-lg-inline">
+                                Bookmarks
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="../lists.html" class="nav-link">
+                            <i class="far fa-list-alt me-2"></i>
+                            <span class="d-none d-lg-inline">
+                                Lists
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="../profile.html" class="nav-link">
+                            <i class="far fa-user me-2"></i>
+                            <span class="d-none d-lg-inline">
+                                Profile
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="../navigation.html" class="nav-link">
+                            <i class="fas fa-ellipsis-h me-2"></i>
+                            <span class="d-none d-lg-inline">
+                                More
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="d-grid gap-2 mt-4">
+                    <button href="#" class="btn btn-primary rounded-pill btn-block">
+                        <span class="d-block">Tuit</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Center Column -->
+            <div class="col-lg-6 col-md-11 col-sm-8 col-xs-5">
+                <div class="mb-4 mt-3">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white border-0"><i class="fas fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control rounded-pill" placeholder="Search Tuiter"
+                            aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-white border-0"><i class="fas fa-cog"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#for-you" data-bs-toggle="tab">
+                            For You
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trending" data-bs-toggle="tab">
+                            Trending
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news" data-bs-toggle="tab">
+                            News
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sports" data-bs-toggle="tab">
+                            Sports
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#entertainment" data-bs-toggle="tab">
+                            Entertainment
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content mt-3">
+                    <div class="tab-pane fade show active" id="for-you">
+                        <div class="wd-tuit">
+                            <div class="wd-tuit-image">
+                                <div class="wd-image-container">
+                                    <img
+                                        src="https://cdn.theatlantic.com/thumbor/PkKFXtMpY6Vr86YdHndtNmFca4w=/0x0:2500x1406/1600x900/media/img/mt/2022/02/50703878421_7712bb60d3_o_1/original.jpg" />
+                                    <h2 class="wd-image-text">SpaceX's Starship</h2>
+                                </div>
+                            </div>
+
+                            <hr class="wd-tuit-separator">
+                            <div class="wd-tuit">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="wd-tuit-left-wrapper">
+                                                <div class="wd-tuit-text">
+                                                    Web Development<br>
+                                                    <b>ReactJS</b> <i class="fa fa-check-circle"></i> - 2h<br>
+                                                    React.js is a componeent based front end library that makes it very
+                                                    easy to build single page applications or SPAs
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAEViKX0q2asZgDBwr5YnZtSzKxBeQmWTX86VfL0jEuw&s"
+                                                class="rounded" width="40%" height="auto">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <hr class="wd-tuit-separator">
+                            <div class="wd-tuit">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="wd-tuit-left-wrapper">
+                                                <div class="wd-tuit-text">
+                                                    <b>Javascript</b> <i class="fa fa-check-circle"></i> - 2h<br>
+                                                    Javascript is a programming language that can run on browsers as
+                                                    well as desktops<br>
+                                                    123k tuits
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"
+                                                class="rounded" width="40%" height="auto">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="wd-tuit-separator">
+                            <div class="wd-tuit">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="wd-tuit-left-wrapper">
+                                                <div class="wd-tuit-text">
+                                                    Web Development <br>
+                                                    <b>jQuery</b><br>
+                                                    123k tuits
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <img src="https://w7.pngwing.com/pngs/720/46/png-transparent-jquery-plain-wordmark-logo-icon-thumbnail.png"
+                                                class="rounded" width="40%" height="auto">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="wd-tuit-separator">
+                            <div class="wd-tuit">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="wd-tuit-left-wrapper">
+                                                <div class="wd-tuit-text">
+                                                    Web Development<br>
+                                                    <b>NodeJS</b> <i class="fa fa-check-circle"></i> - 2h<br>
+                                                    123k tuits
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png"
+                                                class="rounded" width="40%" height="auto">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="trending">
+                        <div class="wd-image-container">
+                            <img
+                                src="https://e3.365dm.com/23/04/2048x1152/skynews-st-edwards-crown-coronation_6113709.jpg" />
+                            <h2 class="wd-image-text">The Coronation of King Charles III</h2>
+                        </div>
+                        <hr class="wd-tuit-separator">
+                        <div class="wd-tuit">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="wd-tuit-left-wrapper">
+                                            <div class="wd-tuit-text">
+                                                Headlines<br>
+                                                User Who Tuited<br>
+                                                Number of tuits
+                                            </div>
+                                            <div class="wd-tuit-icons d-flex">
+                                                <div class="wd-tuit-icon me-3"><i class="far fa-comment"></i></div>
+                                                <div class="wd-tuit-icon me-3"><i class="fas fa-retweet"></i></div>
+                                                <div class="wd-tuit-icon me-3"><i class="far fa-heart"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <img src="https://compote.slate.com/images/760b74a3-7156-4dbe-90bd-b021327b6c49.jpeg"
+                                            class="rounded" width="40%" height="auto">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <hr class="wd-tuit-separator">
+                        <div class="wd-tuit">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="wd-tuit-left-wrapper">
+                                            <div class="wd-tuit-text">
+                                                Headlines<br>
+                                                User Who Tuited<br>
+                                                Number of tuitts
+                                            </div>
+                                            <div class="wd-tuit-icons d-flex">
+                                                <div class="wd-tuit-icon me-3"><i class="far fa-comment"></i></div>
+                                                <div class="wd-tuit-icon me-3"><i class="fas fa-retweet"></i></div>
+                                                <div class="wd-tuit-icon me-3"><i class="far fa-heart"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <img src="https://compote.slate.com/images/760b74a3-7156-4dbe-90bd-b021327b6c49.jpeg"
+                                            class="rounded" width="40%" height="auto">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="news">
+                        <div class="wd-image-container">
+                            <img
+                                src="https://e3.365dm.com/23/04/2048x1152/skynews-st-edwards-crown-coronation_6113709.jpg" />
+                            <h2 class="wd-image-text">The Coronation of King Charles III</h2>
+                        </div>
+                        <hr class="wd-tuit-separator">
+                        <div class="wd-tuit">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="wd-tuit-left-wrapper">
+                                            <div class="wd-tuit-text">
+                                                Headlines<br>
+                                                User Who Tuited<br>
+                                                Number of tuits
+                                            </div>
+                                            <div class="wd-tuit-icons d-flex">
+                                                <div class="wd-tuit-icon me-3"><i class="far fa-comment"></i></div>
+                                                <div class="wd-tuit-icon me-3"><i class="fas fa-retweet"></i></div>
+                                                <div class="wd-tuit-icon me-3"><i class="far fa-heart"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <img src="https://compote.slate.com/images/760b74a3-7156-4dbe-90bd-b021327b6c49.jpeg"
+                                            class="rounded" width="40%" height="auto">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <hr class="wd-tuit-separator">
+                        <div class="wd-tuit">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="wd-tuit-left-wrapper">
+                                            <div class="wd-tuit-text">
+                                                Headlines<br>
+                                                User Who Tuited<br>
+                                                Number of tuits
+                                            </div>
+                                            <div class="wd-tuit-icons d-flex">
+                                                <div class="wd-tuit-icon me-3"><i class="far fa-comment"></i></div>
+                                                <div class="wd-tuit-icon me-3"><i class="fas fa-retweet"></i></div>
+                                                <div class="wd-tuit-icon me-3"><i class="far fa-heart"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <img src="https://compote.slate.com/images/760b74a3-7156-4dbe-90bd-b021327b6c49.jpeg"
+                                            class="rounded" width="40%" height="auto">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="sports">
+                        <div class="wd-image-container">
+                            <img
+                                src="https://e3.365dm.com/23/04/2048x1152/skynews-st-edwards-crown-coronation_6113709.jpg" />
+                            <h2 class="wd-image-text">The Coronation of King Charles III</h2>
+                        </div>
+                        <hr class="wd-tuit-separator">
+                        <div class="wd-tuit">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="wd-tuit-left-wrapper">
+                                            <div class="wd-tuit-text">
+                                                Headlines<br>
+                                                User Who Tuited<br>
+                                                Number of tuits
+                                            </div>
+                                            <div class="wd-tuit-icons d-flex">
+                                                <div class="wd-tuit-icon me-3"><i class="far fa-comment"></i></div>
+                                                <div class="wd-tuit-icon me-3"><i class="fas fa-retweet"></i></div>
+                                                <div class="wd-tuit-icon me-3"><i class="far fa-heart"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <img src="https://compote.slate.com/images/760b74a3-7156-4dbe-90bd-b021327b6c49.jpeg"
+                                            class="rounded" width="40%" height="auto">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <hr class="wd-tuit-separator">
+                        <div class="wd-tuit">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="wd-tuit-left-wrapper">
+                                            <div class="wd-tuit-text">
+                                                Headlines<br>
+                                                User Who Tuited<br>
+                                                Number of tuits
+                                            </div>
+                                            <div class="wd-tuit-icons d-flex">
+                                                <div class="wd-tuit-icon me-3"><i class="far fa-comment"></i></div>
+                                                <div class="wd-tuit-icon me-3"><i class="fas fa-retweet"></i></div>
+                                                <div class="wd-tuit-icon me-3"><i class="far fa-heart"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <img src="https://compote.slate.com/images/760b74a3-7156-4dbe-90bd-b021327b6c49.jpeg"
+                                            class="rounded" width="40%" height="auto">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="entertainment">
+                        <div class="wd-image-container">
+                            <img
+                                src="https://e3.365dm.com/23/04/2048x1152/skynews-st-edwards-crown-coronation_6113709.jpg" />
+                            <h2 class="wd-image-text">The Coronation of King Charles III</h2>
+                        </div>
+                        <hr class="wd-tuit-separator">
+                        <div class="wd-tuit">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="wd-tuit-left-wrapper">
+                                            <div class="wd-tuit-text">
+                                                Headlines<br>
+                                                User Who Tuited<br>
+                                                Number of tuitts
+                                            </div>
+                                            <div class="wd-tuit-icons d-flex">
+                                                <div class="wd-tuit-icon me-3"><i class="far fa-comment"></i></div>
+                                                <div class="wd-tuit-icon me-3"><i class="fas fa-retweet"></i></div>
+                                                <div class="wd-tuit-icon me-3"><i class="far fa-heart"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <img src="https://compote.slate.com/images/760b74a3-7156-4dbe-90bd-b021327b6c49.jpeg"
+                                            class="rounded" width="40%" height="auto">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <hr class="wd-tuit-separator">
+                        <div class="wd-tuit">
+                            <div class="container">
+                                <div class="row d-flex">
+                                    <div class="col-7">
+                                        <div class="wd-tuit-left-wrapper">
+                                            <div class="wd-tuit-text">
+                                                Headlines<br>
+                                                User Who Tuited<br>
+                                                Number of tuits
+                                            </div>
+                                            <div class="wd-tuit-icons d-flex">
+                                                <div class="wd-tuit-icon me-3"><i class="far fa-comment"></i></div>
+                                                <div class="wd-tuit-icon me-3"><i class="fas fa-retweet"></i></div>
+                                                <div class="wd-tuit-icon me-3"><i class="far fa-heart"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <img src="https://compote.slate.com/images/760b74a3-7156-4dbe-90bd-b021327b6c49.jpeg"
+                                            class="rounded" width="40%" height="auto">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Right Column -->
+            <div class="col-lg-4 d-none d-lg-block">
+                <h5 class="mb-3 mt-3">Who to Follow</h5>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-xl-2 col-md-3">
+                                <img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png"
+                                    class="rounded-circle" width="48" height="48">
+                            </div>
+                            <div class="col-xl-6 col-md-8">
+                                <div class="fw-bold">Java <i class="fas fa-check-circle"></i></div>
+                                <div class="text-muted">@java</div>
+                            </div>
+                            <div class="col-xl-4">
+                                <button class="btn btn-primary btn-sm btn-pill">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-xl-2 col-md-3">
+                                <img src="https://asset.brandfetch.io/idxHkwDlzY/idCa9yfj58.jpeg" class="rounded-circle"
+                                    width="48" height="48">
+                            </div>
+                            <div class="col-xl-6 col-md-8">
+                                <div class="fw-bold">Relativity Space<i class="fas fa-check-circle"></i></div>
+                                <div class="text-muted">@relativityspace</div>
+                            </div>
+                            <div class="col-xl-4">
+                                <button class="btn btn-primary btn-sm btn-pill">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-xl-2 col-lg-3">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/7/71/Virgin_Orbin_company_logo_2017.png"
+                                    class="rounded-circle" width="48" height="48">
+                            </div>
+                            <div class="col-xl-6 col-lg-8">
+                                <div class="fw-bold">Virgin Galactic<i class="fas fa-check-circle"></i></div>
+                                <div class="text-muted">@virgingalactic</div>
+                            </div>
+                            <div class="col-xl-4">
+                                <button class="btn btn-primary btn-sm btn-pill">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-xl-2 col-lg-3">
+                                <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png"
+                                    class="rounded-circle" width="48" height="48">
+                            </div>
+                            <div class="col-xl-6 col-lg-8">
+                                <div class="fw-bold">Nasa<i class="fas fa-check-circle"></i></div>
+                                <div class="text-muted">@nasa</div>
+                            </div>
+                            <div class="col-xl-4">
+                                <button class="btn btn-primary btn-sm btn-pill">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-xl-2 col-lg-3">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Tesla_Motors.svg/793px-Tesla_Motors.svg.png"
+                                    class="rounded-circle" width="48" height="48">
+                            </div>
+                            <div class="col-xl-6 col-lg-8">
+                                <div class="fw-bold">Tesla<i class="fas fa-check-circle"></i></div>
+                                <div class="text-muted">@tesla</div>
+                            </div>
+                            <div class="col-xl-4">
+                                <button class="btn btn-primary btn-sm btn-pill">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

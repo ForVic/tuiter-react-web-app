@@ -1,0 +1,107 @@
+/* Styles for the Explore page */
+
+/* Explore Content */
+.wd-explore-content {
+  padding: 20px;
+}
+
+/* Search Bar */
+.wd-search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.wd-search-input {
+  flex-grow: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.wd-search-btn,
+.wd-gear-btn {
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Tabs */
+.wd-tabs ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.wd-tabs li {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.wd-active-tab {
+  border-bottom: 2px solid #1da1f2;
+}
+
+/* Explore Image */
+.wd-image-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.wd-image-container img {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+}
+
+.wd-image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Trending List */
+.wd-trending-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wd-trending-list li {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wd-trending-category {
+  color: #777;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.wd-trending-topic {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.wd-trending-tweets {
+  color: #777;
+  font-size: 14px;
+}
+
+.wd-more-button {
+  margin-top: 10px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.wd-more-button i {
+  color: #777;
+}
