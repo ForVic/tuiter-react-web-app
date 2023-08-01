@@ -8,9 +8,18 @@ import ProfileScreen from "./profile-screen";
 import WhoToFollowListItem from "./who-to-follow-list/who-to-follow-list-item";
 import WhoToFollowList from "./who-to-follow-list";
 import TuitSummaryList from "./tuit-summary-list";
+import { Navigate } from "react-router";
+import whoReducer from "./reducers/who-reducer";
+import { configureStore } from '@reduxjs/toolkit';
+import tuitsReducer from "./reducers/tuits-reducer";
+import {Provider} from "react-redux";
+
 
 function Tuiter() {
+const store = configureStore(
+  {reducer: {who: whoReducer, tuits: tuitsReducer}});
   return (
+    <Provider store={store}>
     <div>
       <Nav />
       <div className="row">
@@ -19,6 +28,7 @@ function Tuiter() {
         </div>
         <div className="col-7">
           <Routes>
+            <Route path="/" element={<Navigate to="./home"/>} />
             <Route path="/home" element={<HomeScreen />} />
             <Route path="/explore" element={<ExploreScreen />} />
             <Route path="/bookmarks" element={<BookmarksScreen />} />
@@ -26,10 +36,13 @@ function Tuiter() {
           </Routes>
         </div>
         <div className="col-3">
+          <div className="d-none d-lg-block">
             <WhoToFollowList/>
+            </div>
         </div>
       </div>
     </div>
+    </Provider>
   );
 }
 export default Tuiter;
