@@ -32,12 +32,7 @@ const TuitItem = ({ tuit }) => {
       </div>
       <div className="row">
         <TuitStats
-          tuit={{
-            replies: tuit.replies,
-            likes: tuit.likes,
-            retuits: tuit.retuits,
-            liked: tuit.liked,
-          }}
+          tuit={tuit}
         />
       </div>
     </li>
