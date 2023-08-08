@@ -20,7 +20,7 @@ const TuitSummaryItem = (
        <div>{tuit.title}</div>
      </div>
      <div className="col-2">
-       <img width={100} height={100} className="float-end rounded-3" src={require(`./images/${tuit.image}`)}/>
+       <img width={100} height={100} className="float-end rounded-3" src={`/images/${tuit.image}`} alt=""/>
      </div>
    </div>
   </li>

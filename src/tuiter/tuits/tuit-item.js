@@ -1,13 +1,13 @@
 import React from "react";
 import TuitStats from "./tuit-stats";
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "../reducers/tuits-reducer";
-import {RxCross2} from 'react-icons/rx'
+import { deleteTuitThunk } from "../services/tuits-thunks";
+import { RxCross2 } from "react-icons/rx";
 
 const TuitItem = ({ tuit }) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   };
   return (
     <li className="list-group-item">
@@ -18,7 +18,8 @@ const TuitItem = ({ tuit }) => {
               width={50}
               height={50}
               className="float-end rounded-circle shadow"
-              src={require(`../tuit-summary-list/images/${tuit.image}`)}
+              src={`/images/${tuit.image}`}
+              alt=""
             />
           </div>
         </div>
@@ -27,13 +28,11 @@ const TuitItem = ({ tuit }) => {
           <div>{tuit.tuit}</div>
         </div>
         <div className="col-1">
-        <RxCross2 onClick={() => deleteTuitHandler(tuit._id)}/>
+          <RxCross2 onClick={() => deleteTuitHandler(tuit._id)} />
         </div>
       </div>
       <div className="row">
-        <TuitStats
-          tuit={tuit}
-        />
+        <TuitStats tuit={tuit} />
       </div>
     </li>
   );
