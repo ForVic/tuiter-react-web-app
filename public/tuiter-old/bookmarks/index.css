@@ -1,0 +1,123 @@
+/* Styles for the Bookmarks page */
+
+/* Global styles for all pages */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #1da1f2;
+}
+
+/* Bookmarks Content */
+.wd-bookmarks-content {
+  padding: 20px;
+}
+
+.wd-heading {
+  margin-bottom: 20px;
+}
+
+/* Tuit */
+.wd-tuit {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.wd-tuit-icon {
+  border-radius: 50%;
+  background-color: #1da1f2;
+  color: #fff;
+  display: inline-block;
+  padding: 8px;
+}
+
+.wd-tuit-icon i {
+  font-size: 18px;
+}
+
+.wd-tuit-content {
+  display: inline-block;
+  margin-left: 12px;
+  vertical-align: top;
+}
+
+.wd-tuit-header {
+  display: flex;
+  align-items: center;
+}
+
+.wd-tuit-header img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.wd-tuit-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.wd-tuit-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.wd-tuit-name i {
+  font-size: 14px;
+  color: #1da1f2;
+  margin-left: 6px;
+}
+
+.wd-tuit-username {
+  margin: 0;
+  color: #777;
+}
+
+.wd-tuit-date {
+  margin-top: 4px;
+  color: #777;
+}
+
+.wd-tuit-text {
+  margin: 12px 0;
+}
+
+.wd-tuit-image {
+  width: 50%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.wd-tuit-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.wd-tuit-actions a {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  color: #777;
+}
+
+.wd-tuit-actions a i {
+  margin-right: 6px;
+}
+
+.wd-tuit-count {
+  color: #777;
+  margin-right: 6px;
+}
