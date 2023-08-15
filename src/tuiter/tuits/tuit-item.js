@@ -24,7 +24,7 @@ const TuitItem = ({ tuit }) => {
           </div>
         </div>
         <div className="col-10">
-          <b>{tuit.userName}</b> @{tuit.handle} . {new Date(tuit.time).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})}
+          @{tuit.handle} . {new Date(tuit.time).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})}
           <div>{tuit.tuit}</div>
         </div>
         <div className="col-1">
