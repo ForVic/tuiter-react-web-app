@@ -18,13 +18,13 @@ const TuitItem = ({ tuit }) => {
               width={50}
               height={50}
               className="float-end rounded-circle shadow"
-              src={`/images/${tuit.image}`}
+              src={`${tuit.image}`}
               alt=""
             />
           </div>
         </div>
         <div className="col-10">
-          <b>{tuit.userName}</b> {tuit.handle} . {tuit.time}
+          <b>{tuit.userName}</b> @{tuit.handle} . {new Date(tuit.time).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})}
           <div>{tuit.tuit}</div>
         </div>
         <div className="col-1">

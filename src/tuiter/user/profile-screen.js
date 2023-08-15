@@ -16,6 +16,7 @@ function ProfileScreen() {
       const { payload } = await dispatch(profileThunk());
       if (!payload) navigate('../login');
       setProfile(payload);
+      console.log(payload)
     };
     loadProfile();
   }, []);
