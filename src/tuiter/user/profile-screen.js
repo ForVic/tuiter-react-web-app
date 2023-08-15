@@ -12,13 +12,13 @@ function ProfileScreen() {
     await dispatch(updateUserThunk(profile));
   };
   useEffect(() => {
-    const loadProfile = async () => {
-      const { payload } = await dispatch(profileThunk());
-      if (!payload) navigate('../login');
-      setProfile(payload);
-      console.log(payload)
-    };
-    loadProfile();
+    // const loadProfile = async () => {
+      // const { payload } = await dispatch(profileThunk());
+      if (!profile) navigate('../login');
+      // setProfile(payload);
+      // console.log(payload)
+    // };
+    // loadProfile();
   }, []);
 
   return (
